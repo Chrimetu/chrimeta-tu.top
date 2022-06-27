@@ -7,8 +7,6 @@
 .footer-a{
     color: #0d0d0d;
 }
-/* 文章页背景 */
-.body-wrap {
-    /* 以下代表透明度为0.5 可以自行修改*/
+.layout_post>#post {
     background: rgba(255,255,255,0);
 }
