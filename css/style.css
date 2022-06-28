@@ -2,11 +2,13 @@
     background: transparent;
 }
 #footer-wrap{
-    color:#0d0d0d;
+    color:#000000;
 }
 .footer-a{
-    color: #0d0d0d;
+    color: #000000 !important;
 }
-.layout_post>#post {
-    background: rgba(255,255,255,0);
-}
+
+  
+
+
+  
