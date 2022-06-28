@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>候选码、主码、全码、外码、主属性、主键、主关键字、非主属性清晰总结</title>
+      <link href="/archives/27626756.html"/>
+      <url>/archives/27626756.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>键字=码字，所以 主键=主码=主关键字，候选键=候选码=候选关键字.</p></blockquote><ol><li><strong>超码</strong>：也叫超键,码是可以确定一个元组的所有信息的属性名或属性组</li></ol><blockquote><p>例如在 { a, b, c, d } 中，</p><p>假设知道 a 的值就能确定 a, b, c, d 的值，</p><p>假设知道 c, d 的值就可以确定 a, b, c, d 的值，</p><p>那么 { a } 就是码，{ c, d } 就是码。</p><p>并且 { a, b }, { a, c }, { a, b, c }, { a, b, c, d } 等也都是码，因为它们也可以确定一个元组的所有值，即使很多余。  </p></blockquote><ol start="2"><li><strong>候选码:</strong> 也叫候选键,候选码的真子集中不存在码，候选码可以有多个。</li></ol><blockquote><p>就上面的例子而言，{ a } 是候选码，{ c, d } 是候选码，因为它们的真子集中不存在码。  </p><p>而诸如 { a, b } 并不是候选码，因为它的真子集中含有 { a }， 且 { a } 是码。</p></blockquote><ol start="3"><li><strong>主码:</strong> 也叫主键,主码就是主键的意思，主码是任意一个候选码。</li></ol><blockquote><p>还是上面的例子，主码是候选码 { a }， { c, d } 中的其中一个。</p><p>既可以是 { a }， 也可以是 { c, d }。</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/Chrimetu/picdemo/img/20220628192236.png"></p><ol start="4"><li><ul><li><p><strong>主属性:</strong> 候选码包含的属性（一个或多个属性）</p></li><li><p><strong>非主属性:</strong> 不包含在候选码中的属性称为非主属性。 非主属性是相对于主属性来定义的。</p></li></ul></li></ol><blockquote><p>上面那个例子，{c,d}是候选码，那么c是一个主属性，d也是一个主属性  </p></blockquote><ol start="5"><li><strong>外键:</strong> 子数据表中出现的父数据表的主键，称为子数据表的外键。</li></ol><blockquote><p>假如我们还有一个教师表，每个教师都有自己的编号，假设老师编号在教师表中是主键，在学生表中它就是外键。</p></blockquote><ol start="6"><li><strong>全码:</strong> 当所有的属性共同构成一个候选码时，这时该候选码为全码。（教师，课程，学生）假如一个教师可以讲授多门课程，某门课程可以有多个教师讲授，学生可以听不同教师讲授的不同课程，那么，要区分关系中的每一个元组，这个关系模式R的候选码应为全部属性构成 （教师、课程、学生），即主码。</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>韩小颖先生和张静静女士</title>
       <link href="/archives/29420ab5.html"/>
       <url>/archives/29420ab5.html</url>
